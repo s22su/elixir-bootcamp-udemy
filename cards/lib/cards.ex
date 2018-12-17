@@ -33,4 +33,37 @@ defmodule Cards do
   def contains?(deck, card) do
     Enum.member?(deck, card)
   end
+
+  def save(deck, filename) do
+    binary = :erlang.term_to_binary(deck)
+    File.write(filename, binary)
+  end
+
+  def load(filename) do
+    # Solution 1
+    # { status, binary } = File.read(filename)
+
+    # case status do
+    #   :ok -> :erlang.binary_to_term(binary)
+    #   :error -> "File '#{filename}' doesn't exist"
+    # end
+
+    # Solution 2
+    case File.read(filename) do
+      {:ok, binary} -> :erlang.binary_to_term binary
+      {:error, _reason} -> "File '#{filename}' doesn't exist"
+    end
+  end
+
+  def create_hand(hand_size) do
+    #  Solution 1 (bad)
+    # deck = Cards.create_deck
+    # deck = Cards.shuffle(deck)
+    # hand = Cards.deal(deck, hand_size)
+
+    # Solution 2 (mysterious pipe operator :D)
+    Cards.create_deck
+    |> Cards.shuffle
+    |> Cards.deal(hand_size)
+  end
 end

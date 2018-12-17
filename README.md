@@ -12,6 +12,15 @@ To run cards module:
 
 ## **Section 1**
 
-- Check documentation, many functions are built in
+- Check documentation, many functions are built in (Enum + List used so far)
 - Two list comprehensions (outer and inner comprehension) is bad! Result is list of lists and we need to flattern it.
 - We can run multiple comprehendsions at once
+
+## **Section 2**
+
+- Pattern matching is Elixir's replacement for variable assignment
+- Code -> Elixir -> transpiled to Erlang -> run in BEAM (VM)
+- Case + do - for error handling, each case on one line
+- atoms (:ok, :error)
+- Underscore in front of variable name means that we know that there will be some variable but we don't care about it and we need it there because of pattern matching
+- pipe operator (|>), takes return value and passes to next function as FIRST argument
