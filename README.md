@@ -31,3 +31,22 @@ To run cards module:
 - Examples are tests too (doctests)
 - Can make assertions in separate file (case tests)
 - assert vs. refute keywords
+
+## **Section 4**
+
+### **Maps**
+
+- Map: `%{primary: "red", secondary: "blue"}`
+- Pattern matching with maps: `%{secondary: secondary_color} = colors` (secondary_color will be "blue")
+- Update map method 1: `Map.put(map, key, value)`, NB! `:key`
+- Method map method 2: `%{ colors | primary: "blue"}`, NB! Can be used only if key exists in a map.
+- Adding value `Map.put(colors, :white, "black")`
+
+### **Keyword lists**
+
+- Keyword list: `colors = [{:primary, "red"}, {:secondary, "green"}]` -> returns `[primary: "red", secondary: "green"]`
+- Access: `colors[:primary]`
+- Second syntax to crete: `colors = [primary: "red", secondary: "green"]`
+- `colors = [primary: "red", primary: "green"]`, it is valid and keywor list can have many same "keys"
+- Usage is for example when working with DB-s
+- Shortcut: if passing keyword list to a function as a last argument we can omit square braces, also can remove parenthesis
