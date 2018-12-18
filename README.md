@@ -24,3 +24,10 @@ To run cards module:
 - atoms (:ok, :error)
 - Underscore in front of variable name means that we know that there will be some variable but we don't care about it and we need it there because of pattern matching
 - pipe operator (|>), takes return value and passes to next function as FIRST argument
+
+## **Section 3**
+
+- Specific syntax for documentation
+- Examples are tests too (doctests)
+- Can make assertions in separate file (case tests)
+- assert vs. refute keywords
