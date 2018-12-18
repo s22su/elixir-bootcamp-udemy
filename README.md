@@ -50,3 +50,11 @@ To run cards module:
 - `colors = [primary: "red", primary: "green"]`, it is valid and keywor list can have many same "keys"
 - Usage is for example when working with DB-s
 - Shortcut: if passing keyword list to a function as a last argument we can omit square braces, also can remove parenthesis
+
+## **Section 5 & Section 6**
+
+- Pipe operator is cool
+- Struct is a map that is used to store data in Elixir application
+- Structs can be assigned default values
+- Only properties that are defined can exist in a struct
+- Caring about only first three values in a list: `[r, g, b | _tail] = hex_list`
