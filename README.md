@@ -58,3 +58,8 @@ To run cards module:
 - Structs can be assigned default values
 - Only properties that are defined can exist in a struct
 - Caring about only first three values in a list: `[r, g, b | _tail] = hex_list`
+- Tuple should be used when each element has particular meaning like `color = {r, g, b}`
+- needed to add `{:egd, github: "erlang/egd"}` to mix deps
+- Identicon for "s22su":
+
+![Identicon for s22su ](identicon/s22su.png)
