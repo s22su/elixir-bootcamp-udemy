@@ -63,3 +63,12 @@ To run cards module:
 - Identicon for "s22su":
 
 ![Identicon for s22su ](identicon/s22su.png)
+
+## Section 7 - Phoenix 🔥
+
+- use `asdf` to install older elixir (1.4) and erlang (19)
+- installation (v1.2) `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new-1.2.5.ez`
+- `mix phoenix.new discuss`
+- `mix deps.get`
+- `mix ecto.create`
+- `mix phoenix.server`
