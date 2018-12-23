@@ -80,3 +80,8 @@ To run cards module:
 - `mix ecto.gen.migration add_topics`
 - `mix ecto.migrate`
 - `import`, `alias`, `use`
+
+## Section 9
+
+- `func(params \\ %{})` - if we pass `nil` as a param, it will be defaulted to an empty map.
+- `%{"topic" => topic} = params` to get "topic" from posted form (pattern matching 💯)
