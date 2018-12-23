@@ -72,3 +72,11 @@ To run cards module:
 - `mix deps.get`
 - `mix ecto.create`
 - `mix phoenix.server`
+
+## Section 8
+
+- `iex -S mix phoenix.server`
+- HTML is in `templates` directory!
+- `mix ecto.gen.migration add_topics`
+- `mix ecto.migrate`
+- `import`, `alias`, `use`
