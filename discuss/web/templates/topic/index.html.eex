@@ -1,0 +1,31 @@
+<h2>Topic list</h2>
+
+<ul class="collection">
+    <%= for topic <- @topics do %>
+        <li class="collection-item">
+            
+            <div class="left">
+                <%= topic.title %>
+            </div>
+            
+
+            <div class="right">
+                <%= link to: topic_path(@conn, :edit, topic), class: "waves-effect waves-light btn" do %>
+                    <i class="material-icons">edit</i>    
+                <% end %>
+
+                <%= link to: topic_path(@conn, :delete, topic), method: :delete, class: "waves-effect waves-light btn red darken-3" do %>
+                    <i class="material-icons">delete</i>    
+                <% end %>
+            </div>
+
+            <div class="clearfix"></div>
+        </li>
+    <% end %>
+</ul>
+
+<div class="fixed-action-btn">
+    <%= link to: topic_path(@conn, :new), class: "btn-floating btn-large waves-effect waves-light purple darken-4" do %>
+        <i class="material-icons">add</i>
+    <% end %>
+</div>

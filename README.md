@@ -85,3 +85,11 @@ To run cards module:
 
 - `func(params \\ %{})` - if we pass `nil` as a param, it will be defaulted to an empty map.
 - `%{"topic" => topic} = params` to get "topic" from posted form (pattern matching 💯)
+
+## Section 10
+
+- Ecto deals with _Changeset_ and _Repo_
+- Repo insert stuff to database
+- `Discuss.Repo.all(Discuss.Topic)`
+- Simple CRUD for topics is created 🤩
+- `resources "/topics", TopicController`
