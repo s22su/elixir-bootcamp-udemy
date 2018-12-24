@@ -93,3 +93,8 @@ To run cards module:
 - `Discuss.Repo.all(Discuss.Topic)`
 - Simple CRUD for topics is created 🤩
 - `resources "/topics", TopicController`
+
+## Section 11
+
+- 'conn.assigns` = shared user data as a map - useful info from Ueberauth goes there
+- 
