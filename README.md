@@ -97,4 +97,9 @@ To run cards module:
 ## Section 11
 
 - 'conn.assigns` = shared user data as a map - useful info from Ueberauth goes there
-- 
+
+## Section 12
+
+- plug's `call(conn, params)`, params is value that comes out from `init(params)`
+- `delete_session(:user_id)` vs `configure_session(drop: true)`
+- how to write function and module plug!

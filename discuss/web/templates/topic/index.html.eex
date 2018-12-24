@@ -9,15 +9,17 @@
             </div>
             
 
-            <div class="right">
-                <%= link to: topic_path(@conn, :edit, topic), class: "waves-effect waves-light btn" do %>
-                    <i class="material-icons">edit</i>    
-                <% end %>
+            <%= if @conn.assigns.user.id == topic.user_id do %>
+                <div class="right">
+                    <%= link to: topic_path(@conn, :edit, topic), class: "waves-effect waves-light btn" do %>
+                        <i class="material-icons">edit</i>    
+                    <% end %>
 
-                <%= link to: topic_path(@conn, :delete, topic), method: :delete, class: "waves-effect waves-light btn red darken-3" do %>
-                    <i class="material-icons">delete</i>    
-                <% end %>
-            </div>
+                    <%= link to: topic_path(@conn, :delete, topic), method: :delete, class: "waves-effect waves-light btn red darken-3" do %>
+                        <i class="material-icons">delete</i>    
+                    <% end %>
+                </div>
+            <% end %>
 
             <div class="clearfix"></div>
         </li>
