@@ -23,6 +23,7 @@ defmodule Discuss.Router do
     # get "/topics/:id/edit", TopicController, :edit
     # put "/topics/:id", TopicController, :update
     # delete "/topics/:id", TopicController, :update
+    # get "/topics/:id", TopicController, :show
 
     #  or use resources helper if you follow restful conventions!
     resources "/", TopicController

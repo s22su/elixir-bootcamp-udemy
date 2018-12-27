@@ -103,3 +103,9 @@ To run cards module:
 - plug's `call(conn, params)`, params is value that comes out from `init(params)`
 - `delete_session(:user_id)` vs `configure_session(drop: true)`
 - how to write function and module plug!
+
+## Section 13
+
+- `channels/user_socket.ex` - basically a router for channels/sockets
+- `window.userToken = "<%= Phoenix.Token.sign(Discuss.Endpoint, "key", @conn.assigns.user.id) %>";`
+- `Repo.preload(:comments)` -> `Repo.preload(comments: [:user])`
