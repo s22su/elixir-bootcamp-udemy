@@ -109,3 +109,7 @@ To run cards module:
 - `channels/user_socket.ex` - basically a router for channels/sockets
 - `window.userToken = "<%= Phoenix.Token.sign(Discuss.Endpoint, "key", @conn.assigns.user.id) %>";`
 - `Repo.preload(:comments)` -> `Repo.preload(comments: [:user])`
+
+## Section 14 (new in Phoenix 1.3)
+
+- Contexts - new thing :)
